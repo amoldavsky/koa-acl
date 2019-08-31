@@ -1,0 +1,31 @@
+{
+  "name": "koa-acl",
+  "version": "1.0.0",
+  "description": "ACL middleware for Koa",
+  "main": "dist/lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm dist/* && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://amoldavsky@github.com/amoldavsky/koa-acl.git"
+  },
+  "author": "Assaf Moldavsky",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/amoldavsky/koa-acl/issues"
+  },
+  "homepage": "https://github.com/amoldavsky/koa-acl#readme",
+  "devDependencies": {
+    "typescript": "^3.6.2",
+    "@types/node": "^12.7.2",
+    "@types/koa": "^2.0.49",
+    "should": "13.1.3",
+    "mocha": "^6.2.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "koa": "^2.8.1",
+    "koa-router": "7.4.0"
+  }
+}
