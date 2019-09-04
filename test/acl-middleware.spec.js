@@ -89,5 +89,40 @@ describe("ACL middleware permissions", () => {
             });
     });
 
-
+    // TODO: fix this!
+    // it("ts MW this test", done => {
+    //
+    //     class Middleware {
+    //         constructor( text ) {
+    //             this.text = text
+    //         }
+    //
+    //         doSomething( something ) {
+    //             const _this = this;
+    //             return function( ctx, next ) {
+    //                 console.log( `${_this.text}-${something}` );
+    //                 return next();
+    //             }
+    //         }
+    //     }
+    //
+    //
+    //
+    //     const mw = new Middleware( "foo" );
+    //
+    //     // why is this creating an issue??
+    //     const doSomething = mw.doSomething;
+    //
+    //     // let's offset / mess the "this" context
+    //     (async () => {
+    //         await new Promise( (resolve) => {
+    //             setTimeout( () => {
+    //                 const temp = doSomething( "bar", () => {} );
+    //                 temp();
+    //                 resolve();
+    //                 done();
+    //             }, 10 );
+    //         });
+    //     })();
+    // });
 });
